@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자기소개</title>
+<style>
+	@font-face {
+	    font-family: 'YiSunShinRegular';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinRegular.woff') format('woff');
+ 	    font-weight: normal; 
+ 	    font-style: normal; 
+	}
+		
+	body {
+	    background-image: url('./experience_img/woman_bg.png');  /*이미지 넣기*/ 
+	    background-size: 100%;
+	}
+
+	.name {
+		font-family: 'YiSunShinRegular';
+		color: #ba2f3c;
+		font-size: 100px;
+		text-shadow:5px 5px 5px #000;
+		font-weight: bold;
+		margin-bottom: 3%;
+	}
+	
+	.intro {
+		padding-top: 5%;
+		font-family: 'YiSunShinRegular';
+		font-size: 30px;
+		color: white;
+		font-weight: bold;
+		margin-top: 5%;
+		text-shadow:2px 2px 2px #000;
+	}
+
+    .back img {
+    	transition: all 0.2s linear;
+    }
+    
+    .back:hover img {
+    	transform: scale(1.2);
+    }
+    
+    .explanation-text {
+		padding: 15px 20px;
+	    background-color: #444444;
+	    color: #ffffff;
+	    display: none;
+	    font-size: 20px;
+	    width: 400px;
+	    text-align: center;
+	    font-family: 'YiSunShinRegular';
+	}
+	
+	.explanation:hover + .explanation-text {
+	    display: block;
+	}
+
+</style>
+</head>
+<body>
+	<span style="margin-left: 40%;">
+		<audio autoplay>
+			<source src="./audio/scary.mp3" type="audio/mp3">
+		</audio>
+	</span>
+
+	<div style="margin-top: 520px;">
+		<div class="picture" style="margin-top: -520px; text-align: center;">
+			<img src="experience_img/woman.gif" alt="사진" style="width: 400px; text-align: center; margin-top: 3%;"/><br>
+			<div class="name">김서진</div>
+			<span class="intro">
+				동덕여대 컴퓨터학과 3학년에 재학중이며<br><br>
+				나이는 22살, 할때는 제대로 하는 불꽃열혈 학생이다.<br><br>
+				+ mbti는 isfj이고, 이름의 뜻은 서로서로 진실되어 살라는 의미로 스님이 지어주셨다고 한다.
+			</span>	
+		</div>
+	</div>
+	
+	<div class="back">
+		<a href="experience1.html"><img src="./experience_img/back2.png" alt="사진" style="margin-top: -13%; margin-left: 84%;"/></a>
+	</div>
+	
+</body>
+</html>
